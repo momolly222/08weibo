@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+
+<body>
+
+    {{template "nav.html" .}}
+
+    <div id="main">
+        <h1>{{.Title}}</h1>
+        <div id="author">作者： {{.Author}}</div>
+        <div id="tags">标签： {{.Tags}}</div>
+        <div id="content">
+            <p>正文：</p>
+            {{.Content}}
+        </div>
+
+    </div>
+
+</body>
+
+</html>
